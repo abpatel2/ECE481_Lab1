@@ -6,7 +6,6 @@
 -- Design Name: 
 -- Module Name:    four_bit_adder - Behavioral 
 -- Target Devices: 
--- Tool versions: 
 -- Description: 
 --
 -- Dependencies: 
