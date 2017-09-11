@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.xst" -ofn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.syr" 
+xst -intstyle ise -ifn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.xst" -ofn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_adder_pin_ucf.ucf -p xc6slx16-csg324-3 top_my_adder.ngc top_my_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_my_adder_map.ncd top_my_adder.ngd top_my_adder.pcf 
+par -w -intstyle ise -ol high -mt off top_my_adder_map.ncd top_my_adder.ncd top_my_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_my_adder.twx top_my_adder.ncd -o top_my_adder.twr top_my_adder.pcf -ucf top_adder_pin_ucf.ucf 
+bitgen -intstyle ise -f top_my_adder.ut top_my_adder.ncd 
+bitgen -intstyle ise -f top_my_adder.ut top_my_adder.ncd 
+xst -intstyle ise -ifn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.xst" -ofn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.syr" 
+xst -intstyle ise -ifn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.xst" -ofn "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_my_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_adder_pin_ucf.ucf -p xc6slx16-csg324-3 top_my_adder.ngc top_my_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_my_adder_map.ncd top_my_adder.ngd top_my_adder.pcf 
+par -w -intstyle ise -ol high -mt off top_my_adder_map.ncd top_my_adder.ncd top_my_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_my_adder.twx top_my_adder.ncd -o top_my_adder.twr top_my_adder.pcf -ucf top_adder_pin_ucf.ucf 
+bitgen -intstyle ise -f top_my_adder.ut top_my_adder.ncd 

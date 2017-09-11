@@ -1,0 +1,3 @@
+vhdl work "full_adder.vhd"
+vhdl work "four_bit_adder.vhd"
+vhdl work "top_my_adder.vhd"

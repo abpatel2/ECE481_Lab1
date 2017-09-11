@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_adder_tb_isim_beh.exe" -prj "H:/Student/ugrad18/abpatel2/ECE_481/Lab_1/Lab_1/top_adder_tb_beh.prj" "work.top_adder_tb" 
